@@ -34,3 +34,22 @@ def contact(request):
 #     return render(request, "index.html")
 
 
+
+
+def userForm(request):
+    name=''
+    email=''
+    password=''
+    try:
+        if request.method == 'POST':
+            name = request.POST['name']
+            email = request.POST['email']
+            password = request.POST['password']
+
+            print(name, email, password)
+
+    except:
+        pass
+
+    return render(request, 'userform.html',{'name':name,'email':email,'password':password})
+

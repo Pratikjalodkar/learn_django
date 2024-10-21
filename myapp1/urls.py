@@ -11,5 +11,7 @@ urlpatterns = [
     # path('course/', views.course, name="course"), 
     # path('course/<courseId>/', views.courseDetails),
     # path('renderPage/', views.htmlRenderPage)  
+
+    path('user-form/',views.userForm, name='userForm'),
 ]
 
